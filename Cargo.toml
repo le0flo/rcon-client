@@ -1,0 +1,20 @@
+[package]
+name = "rcon-client"
+description = "RCON library and client written in rust"
+version = "1.0.0"
+edition = "2024"
+authors = ["Leonardo <noreply@leoflo.me>"]
+license = "GPL-3.0"
+repository = "https://codeberg.org/leoflo/rcon-client"
+
+[lib]
+name = "rcon_client"
+path = "src/lib.rs"
+
+[[bin]]
+name = "rrcon"
+path = "src/main.rs"
+
+[dependencies]
+rand = { version = "0.9" }
+clap = { version = "4.5" }
